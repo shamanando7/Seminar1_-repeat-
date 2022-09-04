@@ -1,3 +1,10 @@
-﻿// Напишите программу, которая принимает на вход координаты точки (X и Y),
-// причём X ≠ 0 и Y ≠ 0 и выдает номер четверти плоскости, в которой находится эта точка.
+﻿// Напишите программу, которая принимает на вход трехзначное число и на выходе показывает вторую цифру этого числа.
 
+Console.WriteLine("vvedite trehznachnoe chislo");
+string numberString = Console.ReadLine()!;
+int number = int.Parse(numberString);
+
+int firstDigit =  number/10;
+int secondDigit = firstDigit%10;
+
+Console.WriteLine(secondDigit);
