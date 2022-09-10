@@ -4,13 +4,13 @@
 
 int[] createArray()
 {
-var random = new Random();
-var result = new int[12];
-for (int i = 0; i < result.Length; i++)
-{
-result[i] = random.Next(-9, 10);
-}
-return result;
+    var random = new Random();
+    var result = new int[12];
+    for (int i = 0; i < result.Length; i++)
+    {
+        result[i] = random.Next(-9, 10);
+    }
+    return result;
 }
 
 Console.WriteLine("Введите число:");
@@ -20,17 +20,18 @@ int number = int.Parse(numberString!);
 int[] newArray = createArray();
 for (int i = 0; i < newArray.Length; i++)
 {
-Console.Write(newArray[i] + ",");
+    Console.Write(newArray[i] + ",");
 }
+
 bool a = false;
 Console.WriteLine();
 for (int i = 0; i < newArray.Length; i++)
 {
-if (number == newArray[i])
-{
-a = true;
-break;
-}
+    if (number == newArray[i])
+    {
+        a = true;
+        break;
+    }
 }
 if (a) Console.WriteLine("Да");
 else Console.WriteLine("Нет");
